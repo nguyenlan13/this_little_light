@@ -8,7 +8,7 @@ function Navbar() {
     <div
       style={{
         height: "auto",
-        backgroundColor: "#91d5ff",
+        backgroundColor: "#ffadd2",
         padding: "10px 5px 10px 5px",
         position: "fixed",
         width: "100%",
