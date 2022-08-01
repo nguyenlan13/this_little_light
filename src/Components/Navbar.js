@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Badge } from "antd";
 import { Header } from "antd/lib/layout/layout";
+import Logo from "../Assets/This-Little-Light.png"
 
 function Navbar() {
   return (
@@ -23,6 +24,9 @@ function Navbar() {
             justifyContent: "space-around",
           }}
         >
+          <Col className="gutter-row" span={4}>
+            <Link to="/home"><img src={Logo}/></Link>
+          </Col>
           <Col className="gutter-row" span={4}>
             <Link to="/about">About</Link>
           </Col>
