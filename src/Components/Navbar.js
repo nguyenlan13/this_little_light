@@ -19,24 +19,26 @@ function Navbar() {
     >
       <Header className="header">
         <Row
+        // gutter={16}
+        gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
           // gutter={{xs: 8, sm: 16, md: 24, lg: 32}}
-          style={{
-            justifyContent: "space-around",
-          }}
+          // style={{
+          //   justifyContent: "space-around",
+          // }}
         >
-          <Col className="gutter-row" span={4}>
+          <Col className="gutter-row" span={6}>
             <Link to="/home"><img src={Logo}/></Link>
           </Col>
-          <Col className="gutter-row" span={4}>
+          <Col className="gutter-row" span={6}>
             <Link to="/about">About</Link>
           </Col>
-          <Col className="gutter-row" span={4}>
+          <Col className="gutter-row" span={6}>
             <Link to="/new">New Arrivals</Link>
           </Col>
-          <Col span={4}>
+          <Col className="gutter-row" span={6}>
             <Link to="/sale">Sale</Link>
           </Col>
-          <Col span={4}>
+          <Col className="gutter-row" span={6}>
             <Link to="/contact">Contact us</Link>
           </Col>
         </Row>
